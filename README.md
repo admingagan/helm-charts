@@ -10,17 +10,16 @@ Steps to install HELM 3 on Kubernetes Cluster
 
    example:
    
-   helm install kubernetes-dashboard https://kmayer10.github.io/helm-charts/mychart-0.1.0.tgz
-   helm upgrade kubernetes-dashboard https://kmayer10.github.io/helm-charts/mychart-0.1.1.tgz
-   helm history kubernetes-dashboard #to check the Release Revision
-   helm rollback kubernetes-dashboard revision <release revision number to rollback to>
+   1. helm install kubernetes-dashboard https://kmayer10.github.io/helm-charts/mychart-0.1.0.tgz
+   2. helm upgrade kubernetes-dashboard https://kmayer10.github.io/helm-charts/mychart-0.1.1.tgz
+   3. helm history kubernetes-dashboard #to check the Release Revision
+   4. helm rollback kubernetes-dashboard revision <release revision number to rollback to>
    
-   helm create <chart name> # to create chart template to be prepared
+   5. helm create <chart name> # to create chart template to be prepared
       
-      Sample Helm Chart Structure:
-         https://github.com/kmayer10/helm-charts/tree/master/mychart
+   6. Sample Helm Chart Structure  --  https://github.com/kmayer10/helm-charts/tree/master/mychart
    
-   helm package <chart folder location> # to create helm chart
-   helm repo add <repo-name> <repo-link> # to add online repo as local repo to download existing helm charts, you can consider them as yum repos or docker-registries
+   7. helm package <chart folder location> # to create helm chart
+   8. helm repo add <repo-name> <repo-link> # to add online repo as local repo to download existing helm charts, you can consider them as yum repos or docker-registries
    
-   helm repo index <chart folder location> --url https://kmayer10.github.io/helm-charts to create index.yaml file which is used by above command to add online repo as HELM Local Repository
+   9. helm repo index <chart folder location> --url https://kmayer10.github.io/helm-charts to create index.yaml file which is used by above command to add online repo as HELM Local Repository
