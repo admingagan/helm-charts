@@ -9,5 +9,5 @@ Follow below steps to do the same
 5. helm version 
 6. helm ls # to check the current release
 7. helm install release-name helm-package
-          example:
-            helm install kubernetes-dashboard mychart-0.1.0.tgz
+   example:
+   helm install kubernetes-dashboard mychart-0.1.0.tgz
